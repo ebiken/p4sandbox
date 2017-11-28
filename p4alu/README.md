@@ -35,9 +35,9 @@ table_add t_p4alu p4alu_sub 2 =>
 
 ```c
 header_type p4alu_t {
-    fields { // 13 bytes
+    fields { // 14 bytes
         op1    : 32;
-        opCode : 16; // fit better to UDP than 8bit
+        opCode : 16;
         op2    : 32;
         result : 32;
     }
