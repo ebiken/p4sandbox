@@ -69,9 +69,9 @@ header udp_t udp;
  */
 
 header_type p4alu_t {
-    fields { // 13 bytes
+    fields { // 14 bytes
         op1    : 32;
-        opCode : 16; // fit better to UDP than 8bit
+        opCode : 16;
         op2    : 32;
         result : 32;
     }
