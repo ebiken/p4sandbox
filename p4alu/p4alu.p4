@@ -71,7 +71,7 @@ header udp_t udp;
 header_type p4alu_t {
     fields { // 13 bytes
         op1    : 32;
-        opCode : 8;
+        opCode : 16; // fit better to UDP than 8bit
         op2    : 32;
         result : 32;
     }
@@ -107,7 +107,7 @@ parser parse_ipv4 {
 parser parse_udp {
     extract(udp);
     return select(latest.dstPort) {
-        UDP_PORT_P4CALC_O : parse_p4alu;
+        UDP_PORT_P4ALU : parse_p4alu;
         default: ingress;
     }
 }
