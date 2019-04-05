@@ -1,7 +1,9 @@
-# p4alu ... Arithmetic Logic Unit in P4
+# p4alu ... Arithmetic Logic Unit in P4-14
 
 This P4 program would parse UDP packet with payload in "p4alu header format" and apply calculation and set result based on the operand/opcode in the original packet.
 This program is tested using BMv2 simple_switch P4 target.
+
+[Sldie Share: p4alu: Arithmetic Logic Unit in P4](https://www.slideshare.net/kentaroebisawa/p4alu-arithmetic-logic-unit-in-p4)
 
 ## Compile, Run on BMv2 and Configure
 
